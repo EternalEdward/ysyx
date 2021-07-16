@@ -12,4 +12,5 @@ always @(*) begin
         default: z <= 64'h0000000000000000;
     endcase
 end
+
 endmodule

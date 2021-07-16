@@ -4,6 +4,7 @@ module pc (
     input rst,
     output reg[63:0]pc
 );
+
 always @(posedge clk) begin
     if (rst == 1'b1) begin
       ce <= 1'b0;

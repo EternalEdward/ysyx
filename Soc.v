@@ -4,9 +4,11 @@ module simply (
     input tb,
     input [31:0]tb_inst
 );
+
 wire [31:0]s_inst;
 wire [63:0]addr;
 wire ce;
+
     top cpu(
         .clk(clk),
         .rst(rst),
@@ -22,4 +24,5 @@ wire ce;
         .addr(addr),
         .inst(s_inst)
     );
+
 endmodule

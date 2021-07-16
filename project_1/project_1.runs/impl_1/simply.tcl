@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -74,7 +75,6 @@ set rc [catch {
   set_property ip_output_repo C:/Users/Eternal/Desktop/QAQ/project_1/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/Eternal/Desktop/QAQ/project_1/project_1.runs/synth_1/simply.dcp
-  read_xdc C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/constrs_1/new/tb.xdc
   link_design -top simply -part xc7a200tsbg484-2
   close_msg_db -file init_design.pb
 } RESULT]

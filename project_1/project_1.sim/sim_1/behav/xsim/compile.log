@@ -16,9 +16,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Eternal/Desktop/QAQ/rom.v"
 INFO: [VRFC 10-311] analyzing module test_rom
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Eternal/Desktop/QAQ/top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top
-INFO: [VRFC 10-2458] undeclared symbol aluop, assumed default net type wire [C:/Users/Eternal/Desktop/QAQ/top.v:37]
-WARNING: [VRFC 10-2938] 'aluop' is already implicitly declared on line 37 [C:/Users/Eternal/Desktop/QAQ/top.v:41]
-INFO: [VRFC 10-2458] undeclared symbol ALU_result, assumed default net type wire [C:/Users/Eternal/Desktop/QAQ/top.v:53]
-WARNING: [VRFC 10-2938] 'ALU_result' is already implicitly declared on line 53 [C:/Users/Eternal/Desktop/QAQ/top.v:73]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/sim_1/new/QAQtb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module QAQtb

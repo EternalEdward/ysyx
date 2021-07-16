@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a200tsbg484-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -47,9 +48,6 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/constrs_1/new/tb.xdc
-set_property used_in_implementation false [get_files C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/constrs_1/new/tb.xdc]
-
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 

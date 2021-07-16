@@ -13,7 +13,19 @@ module top (
 );//连CPU的数据通路 
 //pc
 //由于时间原因我节省了很多模块，写的有点拉胯
+
+wire [63:0]Scure_A;
+wire [63:0]Scure_B;
+wire [63:0]rdata2;
 reg [31:0]inst;
+wire wen;
+wire mux_imm_rdata2_sel;
+wire [1:0]aluop;
+wire [11:0]imm;//先解决12位的imm,
+assign imm = inst[31:20];
+wire [63:0]after_ext_imm;
+wire [63:0]ALU_result;
+
 always @(*)begin
     if(tb == 1'b1)begin
         inst <= tb_inst;
@@ -22,6 +34,8 @@ always @(*)begin
         inst <= inst_t;
     end
 end
+
+
 pc pc_s(
     .clk(clk),
     .ce(ce),
@@ -29,8 +43,6 @@ pc pc_s(
     .pc(instaddr)
 );
 
-wire wen;
-wire mux_imm_rdata2_sel;
 //decoder
 decoder decoder(
     .inst(inst),
@@ -38,11 +50,9 @@ decoder decoder(
     .wen(wen),
     .mux_imm_rdata2_sel(mux_imm_rdata2_sel)
 );
-wire [1:0]aluop;
+
 //regfile
-wire [63:0]Scure_A;
-wire [63:0]Scure_B;
-wire [63:0]rdata2;
+
 regs regfile(
     .clk(clk),
     .rst(rst),
@@ -56,9 +66,7 @@ regs regfile(
     .rdata1(Scure_A),
     .rdata2(rdata2)
 );
-wire [11:0]imm;//先解决12位的imm,
-assign imm = inst[31:25];
-wire [63:0]after_ext_imm;
+
 ext ext_immaddi(
     .imm(imm),
     .result(after_ext_imm)
@@ -70,7 +78,7 @@ mux_2_64 mux_imm_rdata2(
     .sel(mux_imm_rdata2_sel),
     .z(Scure_B)
 );
-wire [63:0]ALU_result;
+
 //alu
 ALU alu(
     .x(Scure_A),//A
@@ -79,6 +87,4 @@ ALU alu(
     .z(ALU_result)
 );
 
-
-    
 endmodule

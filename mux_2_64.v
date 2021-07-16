@@ -4,6 +4,7 @@ module  mux_2_64(
     input sel,
     output [63:0]z
 );
+
 assign z = sel ? x : y;
 
 endmodule
