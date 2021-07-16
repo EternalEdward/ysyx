@@ -1,0 +1,493 @@
+
+*** Running vivado
+    with args -log simply.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source simply.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source simply.tcl -notrace
+Command: synth_design -top simply -part xc7a200tsbg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tsbg484-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18688 
+WARNING: [Synth 8-992] aluop is already implicitly declared earlier [C:/Users/Eternal/Desktop/QAQ/top.v:28]
+WARNING: [Synth 8-992] ALU_result is already implicitly declared earlier [C:/Users/Eternal/Desktop/QAQ/top.v:60]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1031.543 ; gain = 239.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'simply' [C:/Users/Eternal/Desktop/QAQ/Soc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Eternal/Desktop/QAQ/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/Eternal/Desktop/QAQ/pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [C:/Users/Eternal/Desktop/QAQ/pc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/Eternal/Desktop/QAQ/de_coder.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Eternal/Desktop/QAQ/de_coder.v:16]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Eternal/Desktop/QAQ/de_coder.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (2#1) [C:/Users/Eternal/Desktop/QAQ/de_coder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regs' [C:/Users/Eternal/Desktop/QAQ/regers.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regs' (3#1) [C:/Users/Eternal/Desktop/QAQ/regers.v:1]
+WARNING: [Synth 8-689] width (6) of port connection 'waddr' does not match port width (5) of module 'regs' [C:/Users/Eternal/Desktop/QAQ/top.v:41]
+INFO: [Synth 8-6157] synthesizing module 'ext' [C:/Users/Eternal/Desktop/QAQ/ext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ext' (4#1) [C:/Users/Eternal/Desktop/QAQ/ext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux_2_64' [C:/Users/Eternal/Desktop/QAQ/mux_2_64.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2_64' (5#1) [C:/Users/Eternal/Desktop/QAQ/mux_2_64.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Eternal/Desktop/QAQ/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/Users/Eternal/Desktop/QAQ/ALU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (7#1) [C:/Users/Eternal/Desktop/QAQ/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'test_rom' [C:/Users/Eternal/Desktop/QAQ/rom.v:1]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'C:UsersEternalDesktopinst.bin'; please make sure the file is added to project and has read permission, ignoring [C:/Users/Eternal/Desktop/QAQ/rom.v:8]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+WARNING: [Synth 8-3848] Net mem in module/entity test_rom does not have driver. [C:/Users/Eternal/Desktop/QAQ/rom.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'test_rom' (8#1) [C:/Users/Eternal/Desktop/QAQ/rom.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'simply' (9#1) [C:/Users/Eternal/Desktop/QAQ/Soc.v:1]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[63]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[62]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[61]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[60]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[59]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[58]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[57]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[56]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[55]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[54]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[53]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[52]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[51]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[50]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[49]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[48]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[47]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[46]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[45]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[44]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[43]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[42]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[41]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[40]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[39]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[38]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[37]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[36]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[35]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[34]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[33]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[32]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[31]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[30]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[29]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[28]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[27]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[26]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[25]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[24]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[23]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[22]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[21]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[20]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[19]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[18]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[17]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[16]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[15]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[14]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[13]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[12]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[11]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[10]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[9]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[8]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[1]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[0]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[31]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[30]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[29]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[28]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[27]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[26]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[25]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[24]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[23]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[22]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[21]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[20]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[19]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[18]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[17]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[16]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[15]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[11]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[10]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[9]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[8]
+WARNING: [Synth 8-3331] design decoder has unconnected port inst[7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1084.426 ; gain = 292.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.426 ; gain = 292.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.426 ; gain = 292.355
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1084.426 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/constrs_1/new/tb.xdc]
+Finished Parsing XDC File [C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/constrs_1/new/tb.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1208.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 1212.254 ; gain = 3.984
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Eternal/Desktop/QAQ/ALU.v:8]
+WARNING: [Synth 8-327] inferring latch for variable 'aluop_reg' [C:/Users/Eternal/Desktop/QAQ/de_coder.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'wen_reg' [C:/Users/Eternal/Desktop/QAQ/de_coder.v:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 32    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 67    
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 67    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 66    
+	   2 Input      1 Bit        Muxes := 64    
+Module mux_2_64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 2     
+Module test_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[63]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[62]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[61]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[60]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[59]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[58]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[57]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[56]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[55]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[54]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[53]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[52]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[51]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[50]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[49]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[48]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[47]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[46]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[45]
+WARNING: [Synth 8-3331] design test_rom has unconnected port addr[44]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (cpu/decoder/aluop_reg[1]) is unused and will be removed from module simply.
+WARNING: [Synth 8-3332] Sequential element (cpu/decoder/aluop_reg[0]) is unused and will be removed from module simply.
+WARNING: [Synth 8-3332] Sequential element (cpu/decoder/wen_reg) is unused and will be removed from module simply.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1212.254 ; gain = 292.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1212.254 ; gain = 420.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.254 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1217.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 173 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 1217.371 ; gain = 766.234
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1217.371 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Eternal/Desktop/QAQ/project_1/project_1.runs/synth_1/simply.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file simply_utilization_synth.rpt -pb simply_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 15 23:01:15 2021...

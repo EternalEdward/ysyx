@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="QAQtb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="QAQtb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="102083fs"></ZoomStartTime>
+      <ZoomEndTime time="673584fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/QAQtb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/inst" type="array">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/instaddr" type="array">
+      <obj_property name="ElementShortName">instaddr[63:0]</obj_property>
+      <obj_property name="ObjectShortName">instaddr[63:0]</obj_property>
+      <obj_property name="Radix">OCTALRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/wen" type="logic">
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/mux_imm_rdata2_sel" type="logic">
+      <obj_property name="ElementShortName">mux_imm_rdata2_sel</obj_property>
+      <obj_property name="ObjectShortName">mux_imm_rdata2_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/aluop" type="array">
+      <obj_property name="ElementShortName">aluop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aluop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/Scure_A" type="array">
+      <obj_property name="ElementShortName">Scure_A[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Scure_A[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/Scure_B" type="array">
+      <obj_property name="ElementShortName">Scure_B[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Scure_B[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/rdata2" type="array">
+      <obj_property name="ElementShortName">rdata2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/imm" type="array">
+      <obj_property name="ElementShortName">imm[11:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/after_ext_imm" type="array">
+      <obj_property name="ElementShortName">after_ext_imm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">after_ext_imm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/cpu/ALU_result" type="array">
+      <obj_property name="ElementShortName">ALU_result[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_result[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/QAQtb/QAQ/QAQrom/mem" type="array">
+      <obj_property name="ElementShortName">mem[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:63][31:0]</obj_property>
+   </wvobject>
+</wave_config>

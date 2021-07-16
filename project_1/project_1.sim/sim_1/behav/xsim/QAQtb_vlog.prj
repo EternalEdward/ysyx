@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../ALU.v" \
+"../../../../../Soc.v" \
+"../../../../../de_coder.v" \
+"../../../../../ext.v" \
+"../../../../../mux_2_64.v" \
+"../../../../../pc.v" \
+"../../../../../regers.v" \
+"../../../../../rom.v" \
+"../../../../../top.v" \
+"../../../../project_1.srcs/sim_1/new/QAQtb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

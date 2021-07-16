@@ -1,0 +1,33 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto de5c8618aa4249cea1c577f9decfdf53 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot QAQtb_behav xil_defaultlib.QAQtb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'tb' [C:/Users/Eternal/Desktop/QAQ/Soc.v:16]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'waddr' [C:/Users/Eternal/Desktop/QAQ/top.v:54]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/Soc.v" Line 1. Module simply doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/top.v" Line 1. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/pc.v" Line 1. Module pc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/de_coder.v" Line 1. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/regers.v" Line 1. Module regs doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/ext.v" Line 1. Module ext doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/mux_2_64.v" Line 1. Module mux_2_64 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/ALU.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Eternal/Desktop/QAQ/rom.v" Line 1. Module test_rom doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.regs
+Compiling module xil_defaultlib.ext
+Compiling module xil_defaultlib.mux_2_64
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.test_rom
+Compiling module xil_defaultlib.simply
+Compiling module xil_defaultlib.QAQtb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot QAQtb_behav

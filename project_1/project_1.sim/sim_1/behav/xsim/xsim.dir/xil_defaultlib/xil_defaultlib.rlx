@@ -1,0 +1,15 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Eternal/Desktop/QAQ/ALU.v,1626345762,verilog,,C:/Users/Eternal/Desktop/QAQ/Soc.v,,ALU,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/Soc.v,1626391710,verilog,,C:/Users/Eternal/Desktop/QAQ/de_coder.v,,simply,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/de_coder.v,1626354914,verilog,,C:/Users/Eternal/Desktop/QAQ/ext.v,,decoder,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/ext.v,1626345465,verilog,,C:/Users/Eternal/Desktop/QAQ/mux_2_64.v,,ext,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/mux_2_64.v,1626343846,verilog,,C:/Users/Eternal/Desktop/QAQ/pc.v,,mux_2_64,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/pc.v,1626350052,verilog,,C:/Users/Eternal/Desktop/QAQ/regers.v,,pc,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/sim_1/new/QAQtb.v,1626364425,verilog,,,,QAQtb,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/regers.v,1626355063,verilog,,C:/Users/Eternal/Desktop/QAQ/rom.v,,regs,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/rom.v,1626399970,verilog,,C:/Users/Eternal/Desktop/QAQ/top.v,,test_rom,,,,,,,,
+C:/Users/Eternal/Desktop/QAQ/top.v,1626391751,verilog,,C:/Users/Eternal/Desktop/QAQ/project_1/project_1.srcs/sim_1/new/QAQtb.v,,top,,,,,,,,
